@@ -47,7 +47,11 @@ body {
 .game__bar {
     background: var(--submenus);
 
+<<<<<<< HEAD
     /* width: 800px; */
+=======
+    width: 800px;
+>>>>>>> 73e0513 (.)
     min-height: 600px;
 
     border-radius: 10px;
@@ -57,6 +61,7 @@ body {
     margin: 30px 10px;
 }
 
+<<<<<<< HEAD
 @media (max-width: 950px) {
     .cell__line {
         flex-direction: column;
@@ -77,6 +82,12 @@ body {
 .cell {
     min-width: 150px;
     min-height: 150px;
+=======
+
+.cell {
+    width: 150px;
+    height: 150px;
+>>>>>>> 73e0513 (.)
 
     border-radius: 10px;
     display: flex;
@@ -90,8 +101,11 @@ body {
     color: black;
 
     user-select: none;
+<<<<<<< HEAD
 
     margin: 30px 30px;
+=======
+>>>>>>> 73e0513 (.)
 }
 
 .cell__line {
