@@ -5,7 +5,9 @@ import { checkTrue } from "./modules/checkTrue.js"
 import { openAllCards } from "./modules/openAllCards.js"
 
 document.addEventListener("DOMContentLoaded", () => {
-    const pairsCount = prompt("Ввведите количество пар карт.");
+    // const pairsCount = prompt("Ввведите количество пар карт.");
+
+    const pairsCount = 6;
 
     if (pairsCount == "" || pairsCount == "0" || pairsCount == null) {
         alert("Вы ничего не ввели. Перезапуск!")
@@ -48,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         checkFinnaly(randomNumbers);
 
-        timerText.innerHTML -= 1
+        // timerText.innerHTML -= 1
 
         setTimeout(() => {func()}, 1000)
     }
