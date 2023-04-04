@@ -28,7 +28,7 @@ body {
 }
 
 .game {
-    margin-top: 30px;
+    margin: 30px 0px;
 
     color: var(--title);
     background: var(--menus);
