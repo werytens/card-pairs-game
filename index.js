@@ -5,17 +5,15 @@ import { checkTrue } from "./modules/checkTrue.js"
 import { openAllCards } from "./modules/openAllCards.js"
 
 document.addEventListener("DOMContentLoaded", () => {
-    const pairsCount = prompt("Ввведите количество пар карт.");
+    let pairsCount = prompt("Ввведите количество карт.");
 
-    if (pairsCount == "" || pairsCount == "0" || pairsCount == null) {
-        alert("Вы ничего не ввели. Перезапуск!")
-        location.reload()
-        return
+    if (pairsCount == "" || pairsCount == "0" || pairsCount == null || pairsCount > 10 || pairsCount < 2) {
+        pairsCount = 4
     }
 
-    let randomNumbers = generateRandomValues(pairsCount);
+    let randomNumbers = generateRandomValues(pairsCount / 2);
     let timerText = document.querySelector(".timer");
-    timerText.innerHTML = 10 * pairsCount;
+    timerText.innerHTML = 60;
 
     generateCells(randomNumbers);
 
