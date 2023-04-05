@@ -7,7 +7,7 @@ import { openAllCards } from "./modules/openAllCards.js"
 document.addEventListener("DOMContentLoaded", () => {
     let pairsCount = prompt("Ввведите количество карт.");
 
-    if (pairsCount == "" || pairsCount == "0" || pairsCount == null || pairsCount > 10 || pairsCount < 2) {
+    if (pairsCount % 2 != 0 || pairsCount == "" || pairsCount == "0" || pairsCount == null || pairsCount > 10 || pairsCount < 2) {
         pairsCount = 4
     }
 
