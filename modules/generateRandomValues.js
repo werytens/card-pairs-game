@@ -2,7 +2,7 @@ export function generateRandomValues(count) {
     let numbers = [];
 
     for (let index = 0; index < count; index++) {
-        let number = Math.floor(Math.random() * 100);
+        let number = Math.floor(Math.random() * 7) + 1;
 
         if (numbers.includes(number)) {
             index--
